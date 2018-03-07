@@ -32,10 +32,11 @@ def main():
     window = rg.TurtleWindow()
 
     turtle1()
+    turtle4()
     turtle3()
     turtle2()
     turtle2()
-    turtle4()
+    turtle5()
 
     window.close_on_mouse_click()
 
@@ -117,6 +118,27 @@ def turtle4():
     nora.end_fill()
 
 
+def turtle5():
+    tony = rg.SimpleTurtle()
+    tony.speed = 8
+    tony.pen = rg.Pen('green',20)
+
+    izzy = rg.SimpleTurtle('turtle')
+    izzy.speed = 15
+    izzy.pen = rg.Pen('purple', 25)
+
+    tony.forward(200)
+    tony.draw_regular_polygon(6,100)
+    tony.draw_regular_polygon(5,100)
+
+    izzy.right(180)
+    izzy.forward(300)
+    izzy.begin_fill()
+    izzy.draw_square(600)
+    izzy.end_fill()
+    izzy.forward(200)
+    izzy.draw_regular_polygon(12,50)
+
 
 ###############################################################################
 #
@@ -182,7 +204,7 @@ def turtle4():
 
 ###############################################################################
 #
-# TODO: 5.
+# Done. 5.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
@@ -198,7 +220,7 @@ def turtle4():
 
 ###############################################################################
 #
-# TODO: 6.
+# Done. 6.
 #   The previous two TODOs IMPLEMENTED a function (TO-DO 4)
 #   and TESTED that function (TO-DO 5).
 #
@@ -225,7 +247,7 @@ def turtle4():
 
 ###############################################################################
 #
-# TODO: 7.
+# Done. 7.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
