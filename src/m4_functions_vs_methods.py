@@ -83,7 +83,8 @@ def main():
 
     turtle3()
     try_methods()
-
+    try_functions()
+    try_methods_and_functions()
     ###########################################################################
     # When the TODOs ask you to test YOUR code, put YOUR tests below this:
     ###########################################################################
@@ -202,7 +203,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ###########################################################################
-    # TODO: 4. Implement and test this function, per its doc-string above.
+    #Done. 4. Implement and test this function, per its doc-string above.
     #    (To test it, put a statement in   main   that calls this function.)
     #
     #    NOTE: This function requires
@@ -211,7 +212,9 @@ def try_functions():
     #    HINT: see   jump_and_move_turtle   above.
     #
     ###########################################################################
-
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
 
 def try_methods_and_functions():
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
@@ -247,7 +250,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ###########################################################################
-    # TODO: 5. Implement and test this function, per its doc-string above.
+    # Done.: 5. Implement and test this function, per its doc-string above.
     #    (To test it, put a statement in   main   that calls this function.)
     #
     #   NOTE: This function should ** CALL ** the
@@ -255,6 +258,26 @@ def try_methods_and_functions():
     #   function defined above.  If you don't see why, ** ASK FOR HELP. **
     #
     ###########################################################################
+    make = rg.SimpleTurtle()
+    make.pen = rg.Pen('blue', 5)
+
+    make.backward(150)
+    make.speed = 1
+    draw_many_squares(make, 2, 100, 30)
+
+    make.speed = 5
+    make.pen = rg.Pen('red', 5)
+    draw_many_squares(make, 10, 50, 15)
+
+    make.speed = 100
+    make.pen = rg.Pen('red', 35)
+    draw_many_squares(make, 8, 300, 60)
+
+    make.backward(200)
+    make.draw_circle(30)
+    make.draw_square(50)
+
+
 
 
 # -----------------------------------------------------------------------------
